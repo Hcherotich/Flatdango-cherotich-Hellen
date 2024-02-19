@@ -1,13 +1,59 @@
-#main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 2;
 }
 
-#github-container {
+.container {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-ul {
+.movies-menu {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.movies-menu h2 {
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  flex: 2;
+}
+
+.movie-details h2 {
+  margin-bottom: 10px;
+}
+
+.movie-item {
+  cursor: pointer;
   list-style: none;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.movie-item:hover {
+  background-color: #e0e0e0;
+}
+
+.movie-item.sold-out {
+  text-decoration: line-through;
+}
+
+#buy-ticket-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#buy-ticket-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
